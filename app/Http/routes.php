@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('workorders', 'WorkordersController');
+Route::post('workorders', 'WorkordersController@show');
