@@ -14,6 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::resource('dmrs', 'DmrsController');
 Route::resource('workorders', 'WorkordersController');
-Route::post('workorders', 'WorkordersController@show');
+Route::post('dmrs/stage', 'DmrsController@stage');
