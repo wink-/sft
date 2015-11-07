@@ -25,32 +25,35 @@ What relationships are there going to be?
 
 So start with Process and Customer first.
 
+### Customer
+What is the workflow to be done to create a customer?
+
+>Create Model
+* Add fillable fields -- **protected $fillable = [foo, bar, biz, baz];**
+* Change the table to which the model corresponds -- **protected $table = 'mysql_tbl_name';**
+* Turn on softDeletes if used -- **use SoftDeletes;** 
+* Don't forget to import use Illuminate\Database\Eloquent\SoftDeletes;
+* If using SoftDeletes, set protected **$dates = ['deleted_at'];**
+* Define any relationships belongsTo, hasMany, etc.
+
+
+>Create Controller
+
+>Create Route
+
+>Create Views - index, show, and create and form.
+
+>Create migration and seeds
 
 
 
 
-# Dillinger
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
 
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
 
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
 
-This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
 
-### Version
-3.2.0
 
 ### Tech
 

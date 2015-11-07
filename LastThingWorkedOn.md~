@@ -1,0 +1,16 @@
+#Last Thing Worked On
+## 10/27 & 10/28 Customer
+* Monkeyed around with the DataTables library for the index view of Customers.
+* Added export functions, pdf, excel, or clipboard.
+### 10/28 Todo
+* Decide on which DataTables css to roll with - either the bootstrap or the DataTables css.
+
+## 10/26 Customer
+* Created Customer Model and fleshed out the basics
+* Created CustomersController skeleton via artisan
+* Created views directories and files for customers
+
+### 10/26 Todo
+* Finish out views
+* Finish Controller Logic
+* Figure out styling and presentation

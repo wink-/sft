@@ -146,7 +146,14 @@ return [
         App\Providers\RouteServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
-        Barryvdh\Debugbar\ServiceProvider::class,      
+        Barryvdh\Debugbar\ServiceProvider::class,
+        yajra\Datatables\DatatablesServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        Laracasts\Flash\FlashServiceProvider::class,
+        Mitul\Generator\GeneratorServiceProvider::class,
+        Sofa\Eloquence\ServiceProvider::class,
+        
+
 
     ],
 
@@ -198,6 +205,11 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         
         'Image'     => Intervention\Image\Facades\Image::class,
+        'Datatables'=> yajra\Datatables\Datatables::class,
+        'Form'      => Collective\Html\FormFacade::class,
+        'Html'      => Collective\Html\HtmlFacade::class,
+        'Flash'     => Laracasts\Flash\Flash::class
+
     ],
 
 ];
